@@ -1,0 +1,4 @@
+<%= form_for([:supportq, @conversation, @message], remote: false) do |f| %>
+  <%= f.text_field :content %>
+  <%= f.submit "Send", disable_with: 'Sending...' %>
+<% end %>
