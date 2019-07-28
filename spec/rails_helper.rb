@@ -11,8 +11,6 @@ require 'capybara/apparition'
 Capybara.server = :webrick
 Capybara.javascript_driver = :apparition
 
-# Capybara.default_driver = :apparition
-
 Dir[Rails.root.join('../support/**/*.rb')].each { |f| require f }
 
 begin
@@ -27,3 +25,6 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
 end
+
+require 'simplecov'
+SimpleCov.start

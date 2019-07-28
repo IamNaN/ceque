@@ -35,4 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'launchy'
   spec.add_development_dependency 'factory_bot_rails'
   spec.add_development_dependency 'faker'
+  spec.add_development_dependency 'simplecov'
 end
