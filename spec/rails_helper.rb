@@ -10,6 +10,7 @@ require 'capybara/rspec'
 require 'capybara/apparition'
 Capybara.server = :webrick
 Capybara.javascript_driver = :apparition
+Capybara.asset_host = 'http://localhost:3000' 
 
 Dir[Rails.root.join('../support/**/*.rb')].each { |f| require f }
 

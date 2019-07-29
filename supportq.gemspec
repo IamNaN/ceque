@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ["IamNaN"]
   spec.email       = ["dgerton@gmail.com"]
   spec.homepage    = 'https://github/IamNaN/supportq'
-  spec.summary     = 'Mountable Live Support for your App'
-  spec.description = 'Supportq is a mountable chat engine tailored for customer support.'
+  spec.summary     = 'Mountable Live Chat Support Sub-system for your Rails 5+ App'
+  spec.description = 'Supportq is a mountable chat engine focused on user support and customer engagement.'
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -27,13 +27,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 5.2.3"
 
-  spec.add_development_dependency 'byebug'
   spec.add_development_dependency 'pg'
-  spec.add_development_dependency 'rspec-rails'
-  spec.add_development_dependency 'capybara'
-  spec.add_development_dependency 'apparition'
-  spec.add_development_dependency 'launchy'
-  spec.add_development_dependency 'factory_bot_rails'
-  spec.add_development_dependency 'faker'
-  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'dotenv'
 end

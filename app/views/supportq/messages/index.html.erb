@@ -1,2 +1,4 @@
-<%= render @messages %>
-<%= render 'form' %>
+<ul><%= render @messages %></ul>
+<% content_for :footer do %>
+  <%= render 'form' %>
+<% end %>

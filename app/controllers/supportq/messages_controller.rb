@@ -1,14 +1,14 @@
 module Supportq
   class MessagesController < ApplicationController
+    layout 'supportq'
     def index
-      @message = conversation.messages.build
       @messages = conversation.messages
+      @message = conversation.messages.build
     end
     
     def create
-      @message = conversation.messages.build
-      @messages = conversation.messages
       conversation.messages.create(message_params)
+      @messages = conversation.messages
       render 'index'
     end
 
