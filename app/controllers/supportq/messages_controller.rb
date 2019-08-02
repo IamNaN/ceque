@@ -3,7 +3,6 @@ module Supportq
     layout 'supportq'
     def index
       @messages = conversation.messages
-      @message = conversation.messages.build
     end
     
     def create

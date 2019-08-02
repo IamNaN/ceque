@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="">
   <head>
@@ -13,31 +14,194 @@
 
   </head>
 
-<body class="">
-  <div class='container-fluid'>
-    <div class='row'>
-      <nav class='col-md-2 d-none d-md-block bg-light sidebar'>
-        <div class='sidebar-sticky'>
-          <ul>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-          </ul>
-        </div>
-      </nav>
-      <main class='col-md-9 ml-sm-auto col-lg-10 px-4'>
-        <div id='chat-window' class='row'>
-          <%= yield %>
-        </div>
-        <div class="row fixed-bottom p-0 m-0">
-          <div class='col-md-2'>&nbsp;</div>
-          <div class='col'>
-          <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0 m-0">
-            <%= yield :footer %>
+<body class='mod-bg-1 layout-composed-mobile desktop chrome webkit pace-done blur'>
+  <div class='page-wrapper'>
+    <div class='page-inner'>
+      <div class='page-content-wrapper'>
+        <main class='page-content'>
+          <div class='d-flex flex-grow-1 p-0 border-faded shadow-4'>
+            <div id="js-chat-contact" class="flex-wrap position-relative slide-on-mobile slide-on-mobile-left border-faded border-left-0 border-top-0 border-bottom-0">
+              <div class="d-flex flex-column bg-faded position-absolute pos-top pos-bottom w-100">
+                  <div class="px-3 py-4">
+                      <input type="text" class="form-control bg-white" placeholder="Search key words">
+                  </div>
+                  <div class="flex-1 h-100 custom-scrollbar">
+                      <div class="w-100">
+                          <div class="nav-title m-0 px-3 text-muted">Support Queue <span class='badge badge-pill badge-primary float-right'>4</span></div>
+                          <ul class="list-unstyled m-0">
+                              <li>
+                                  <div class="d-flex w-100 px-3 py-2 text-dark hover-white cursor-pointer show-child-on-hover">
+                                      <div class="profile-image-md rounded-circle" style="background-image:url('img/demo/avatars/avatar-d.png'); background-size: cover;"></div>
+                                      <div class="px-2 flex-1">
+                                          <div class="text-truncate text-truncate-md">
+                                              Tracey Chang <span class='badge badge-default float-right'>Active</span><br/>
+                                              <small class="d-block text-muted text-truncate text-truncate-md">
+                                                  2020-01-31
+                                              </small>
+                                          </div>
+                                      </div>
+                                      <div class="position-absolute pos-right mt-2 mr-3 show-on-hover-parent">
+                                          <button class="btn btn-danger btn-xs btn-icon rounded-circle shadow-0 waves-effect waves-themed" data-toggle="tooltip" data-template="<div class=&quot;tooltip&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner bg-danger-500&quot;></div></div>" data-original-title="Delete">
+                                              <i class="fal fa-trash-alt"></i>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="d-flex w-100 px-3 py-2 text-dark hover-white cursor-pointer show-child-on-hover">
+                                      <div class="profile-image-md rounded-circle" style="background-image:url('img/demo/avatars/avatar-b.png'); background-size: cover;"></div>
+                                      <div class="px-2 flex-1">
+                                          <div class="text-truncate text-truncate-md">
+                                              Oliver Kopyuv <span class='badge badge-danger float-right'>11 min</span><br/>
+                                              <small class="d-block text-muted text-truncate text-truncate-md">
+                                                  2019-03-15
+                                              </small>
+                                          </div>
+                                      </div>
+                                      <div class="position-absolute pos-right mt-2 mr-3 show-on-hover-parent">
+                                          <button class="btn btn-danger btn-xs btn-icon rounded-circle shadow-0 waves-effect waves-themed" data-toggle="tooltip" data-template="<div class=&quot;tooltip&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner bg-danger-500&quot;></div></div>" data-original-title="Delete">
+                                              <i class="fal fa-trash-alt"></i>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="d-flex w-100 px-3 py-2 text-dark hover-white cursor-pointer show-child-on-hover">
+                                      <div class="profile-image-md rounded-circle" style="background-image:url('img/demo/avatars/avatar-e.png'); background-size: cover;"></div>
+                                      <div class="px-2 flex-1">
+                                          <div class="text-truncate text-truncate-md">
+                                              Dr. John Cook PhD <span class='badge badge-warning float-right'>7 min</span><br/>
+                                              <small class="d-block text-muted text-truncate text-truncate-md">
+                                                  2023-05-27
+                                              </small>
+                                          </div>
+                                      </div>
+                                      <div class="position-absolute pos-right mt-2 mr-3 show-on-hover-parent">
+                                          <button class="btn btn-danger btn-xs btn-icon rounded-circle shadow-0 waves-effect waves-themed" data-toggle="tooltip" data-template="<div class=&quot;tooltip&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner bg-danger-500&quot;></div></div>" data-original-title="Delete">
+                                              <i class="fal fa-trash-alt"></i>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="d-flex w-100 px-3 py-2 text-dark hover-white cursor-pointer show-child-on-hover">
+                                      <div class="profile-image-md rounded-circle" style="background-image:url('img/demo/avatars/avatar-g.png'); background-size: cover;"></div>
+                                      <div class="px-2 flex-1">
+                                          <div class="text-truncate text-truncate-md">
+                                              Ali Amdaney <span class='badge badge-success float-right'>3 min</span><br/>
+                                              <small class="d-block text-muted text-truncate text-truncate-md">
+                                                  2023-06-11
+                                              </small>
+                                          </div>
+                                      </div>
+                                      <div class="position-absolute pos-right mt-2 mr-3 show-on-hover-parent">
+                                          <button class="btn btn-danger btn-xs btn-icon rounded-circle shadow-0 waves-effect waves-themed" data-toggle="tooltip" data-template="<div class=&quot;tooltip&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner bg-danger-500&quot;></div></div>" data-original-title="Delete">
+                                              <i class="fal fa-trash-alt"></i>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                          <div class="nav-title px-3 text-muted">Missed calls</div>
+                          <ul class="list-unstyled m-0">
+                              <li>
+                                  <div class="d-flex w-100 px-3 py-2 text-dark hover-white cursor-pointer show-child-on-hover">
+                                      <div class="profile-image-md rounded-circle" style="background-image:url('img/demo/avatars/avatar-m.png'); background-size: cover;"></div>
+                                      <div class="px-2 flex-1">
+                                          <div class="text-truncate text-truncate-md">
+                                              +714651347790
+                                              <small class="d-block font-italic fs-xs opacity-50">
+                                                  Missed Call
+                                              </small>
+                                          </div>
+                                      </div>
+                                      <div class="position-absolute pos-right mt-2 mr-3 show-on-hover-parent">
+                                          <button class="btn btn-success btn-xs btn-icon rounded-circle shadow-0 waves-effect waves-themed" data-toggle="tooltip" data-template="<div class=&quot;tooltip&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner bg-success-500&quot;></div></div>" data-original-title="Play voicemail">
+                                              <i class="fal fa-play"></i>
+                                          </button>
+                                          <button class="btn btn-info btn-xs btn-icon rounded-circle shadow-0 waves-effect waves-themed" data-toggle="tooltip" data-template="<div class=&quot;tooltip&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner bg-info-500&quot;></div></div>" data-original-title="Call back">
+                                              <i class="fal fa-phone"></i>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="d-flex w-100 px-3 py-2 text-dark hover-white cursor-pointer show-child-on-hover">
+                                      <div class="profile-image-md rounded-circle" style="background-image:url('img/demo/avatars/avatar-m.png'); background-size: cover;"></div>
+                                      <div class="px-2 flex-1">
+                                          <div class="text-truncate text-truncate-md">
+                                              +13471349199
+                                              <small class="d-block font-italic fs-xs opacity-50">
+                                                  Ended in 32 minutes
+                                              </small>
+                                          </div>
+                                      </div>
+                                      <div class="position-absolute pos-right mt-2 mr-3 show-on-hover-parent">
+                                          <button class="btn btn-info btn-xs btn-icon rounded-circle shadow-0 waves-effect waves-themed" data-toggle="tooltip" data-template="<div class=&quot;tooltip&quot; role=&quot;tooltip&quot;><div class=&quot;tooltip-inner bg-info-500&quot;></div></div>" data-original-title="Call back">
+                                              <i class="fal fa-phone"></i>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div id='chat-window' class='d-flex flex-column flex-grow-1 bg-white'>
+              <div class="flex-grow-0">
+                <%= render 'layouts/title' %>
+              </div>
+              <div class="flex-wrap align-items-center flex-grow-1 position-relative bg-gray-50">
+                <div class="position-absolute pos-top pos-bottom w-100 overflow-hidden">
+                  <div class="d-flex h-100 flex-column">
+                    <!-- message list (the part that scrolls) -->
+                    <!-- BEGIN msgr -->
+                    <div class="msgr d-flex h-100 flex-column bg-white">
+                      <div class="custom-scroll flex-1 h-100">
+                        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: 100%; height: 100%;">
+                          <div id="chat-container" class="w-100 p-4">
+                            <!-- start .chat-segment -->
+                            <div class="chat-segment">
+                              <div class="time-stamp text-center mb-2 fw-400">
+                                Jun 19
+                              </div>
+                            </div>
+                            <!--  end .chat-segment -->
+                            <%= yield %>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div class="msgr-input-container border-faded border-right-0 border-bottom-0 border-left-0 flex-1 mr-3 ml-3 position-relative shadow-top">
+                          <div class="pt-3 pb-1 pr-0 pl-0 rounded-0" tabindex="-1">
+                            <div id="msgr_input" contenteditable="true" data-placeholder="Type your message here..." class="height-10 form-content-editable"></div>
+                          </div>
+                        </div>
+                        <div class="height-8 px-3 d-flex flex-row align-items-center flex-wrap flex-shrink-0">
+                          <a href="javascript:void(0);" class="btn btn-icon fs-xl width-1 mr-1 waves-effect waves-themed" data-toggle="tooltip" data-original-title="More options" data-placement="top">
+                            <i class="fal fa-ellipsis-v-alt color-fusion-300"></i>
+                          </a>
+                          <a href="javascript:void(0);" class="btn btn-icon fs-xl mr-1 waves-effect waves-themed" data-toggle="tooltip" data-original-title="Attach files" data-placement="top">
+                            <i class="fal fa-paperclip color-fusion-300"></i>
+                          </a>
+                          <a href="javascript:void(0);" class="btn btn-icon fs-xl mr-1 waves-effect waves-themed" data-toggle="tooltip" data-original-title="Insert photo" data-placement="top">
+                            <i class="fal fa-camera color-fusion-300"></i>
+                          </a>
+                          <div class="ml-auto">
+                            <a href="javascript:void(0);" class="btn btn-info waves-effect waves-themed">Send</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </nav>
-      </main>
+        </main> 
+        <%= render 'layouts/footer' %>
+      </div>
     </div>
   </div>
 </body>

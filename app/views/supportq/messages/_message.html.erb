@@ -1,1 +1,12 @@
-<li><%= message.content %></li>
+<!-- start .chat-segment -->
+<div class="chat-segment chat-segment-sent">
+  <div class="chat-message">
+    <p>
+      <%= message.content %>
+    </p>
+  </div>
+  <div class="fw-300 text-muted mt-1 fs-xs">
+    <%= message.created_at.strftime('%I:%M %P') %>
+  </div>
+</div>
+<!-- end .chat-segment -->
