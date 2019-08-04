@@ -1,3 +1,5 @@
+require_dependency "supportq/application_controller"
+
 module Supportq
   class MessagesController < ApplicationController
     layout 'supportq'

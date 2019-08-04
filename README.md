@@ -1,9 +1,6 @@
 # Supportq
 Short description and motivation.
 
-# Requirements
-* Bootstrap
-
 ## Usage
 How to use my plugin.
 
