@@ -17,11 +17,13 @@
   <main>
       <%= render 'common/header' %>
       <%# render 'common/hero' %>
-      <div class='flex-container wrapper'>
+      <div class='flex-container'>
         <%= render 'common/sidebar' %>
-        <%= render 'common/content' %>
+        <div class='main-content'>
+          <%= render 'common/content' %>
+          <%= render 'common/footer' %>
+        </div>
       </div>
-      <%= render 'common/footer' %>
     </div>
   </main>
 </body>
