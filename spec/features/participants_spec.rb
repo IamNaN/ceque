@@ -6,7 +6,6 @@ feature 'participants', js: true do
     Given I am a_participant
     When I visit the support_path
     And I enter_a_message
-    op
     And I click_on 'Send'
     Then I a_conversation_is_started
     And my_message_is_displayed
