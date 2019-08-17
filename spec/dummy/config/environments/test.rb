@@ -1,6 +1,10 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # Turn off digests so save_and_open_page will have styling and js
+  # Also needs Capybara.asset_host = 'http://localhost:3000' in rails_helper.rb
+  config.assets.digest = false
+
   # The test environment is used exclusively to run your application's
   # test suite. You never need to work with it otherwise. Remember that
   # your test database is "scratch space" for the test suite and is wiped
