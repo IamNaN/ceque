@@ -1,10 +1,17 @@
 module Supportq
-  class MessagesController < ApplicationController
+  class ConversationsController < ApplicationController
     layout 'supportq'
-    
-    def create
-      conversation.messages.create(message_params)
+    def index
+      conversations
+    end
+
+    def show
+      conversations
       @messages = conversation.messages
+    end
+
+    def new
+      @conversation = Conversation.create
       redirect_to [:supportq, @conversation]
     end
 
@@ -15,7 +22,7 @@ module Supportq
     end
 
     def conversation
-      @conversation ||= params[:conversation_id].present? ? Conversation.find(params[:conversation_id]) : Conversation.create
+      @conversation ||= params[:id].present? ? Conversation.find(params[:id]) : Conversation.create
     end
 
     def conversations
