@@ -17,8 +17,10 @@ ActiveRecord::Schema.define(version: 2019_07_27_204105) do
 
   create_table "conversations", force: :cascade do |t|
     t.jsonb "metadata"
+    t.bigint "created_by_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["created_by_id"], name: "index_conversations_on_created_by_id"
   end
 
   create_table "messages", force: :cascade do |t|

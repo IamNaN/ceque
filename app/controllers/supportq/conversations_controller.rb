@@ -11,8 +11,13 @@ module Supportq
     end
 
     def new
-      @conversation = Conversation.create
-      redirect_to [:supportq, @conversation]
+      render layout: 'supportq_clean'
+    end
+
+    def create
+      @conversation = Conversation.create(created_by: participant)
+      @messages = []
+      render 'show'
     end
 
     private

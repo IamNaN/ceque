@@ -10,9 +10,14 @@ When("I visit the support link") do
 end
 
 When("I enter my name") do
-  fill_in 'Name', with: @me
+  fill_in 'participant_name', with: @me
+end
+
+When("I click_on {string}") do |string|
+  click_on string
 end
 
 Then("I should see the conversation page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page).to have_css '#message_content'
 end
+

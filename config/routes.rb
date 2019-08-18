@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :conversations do
       resources :messages
     end
+    resources :participants, only: [:create]
   end
   get 'support', to: 'supportq/conversations#new'
 end
