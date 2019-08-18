@@ -10,5 +10,5 @@ Rails.application.routes.draw do
       resources :messages
     end
   end
-  get 'support', to: 'supportq/messages#index'
+  get 'support', to: 'supportq/conversations#new'
 end
