@@ -10,10 +10,14 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'webdrivers', '~> 4.0'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'brakeman', require: false
 end
 
 group :test do
-  gem 'capybara'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
   gem 'selenium-webdriver'
   gem 'launchy'
   gem 'factory_bot_rails'
