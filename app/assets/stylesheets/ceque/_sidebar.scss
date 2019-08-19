@@ -1,0 +1,14 @@
+.sidebar-conversations {
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .conversation-date {
+    color: #ccc;
+  }
+
+  .participant-name {
+    font-weight: bold;
+  }
+}

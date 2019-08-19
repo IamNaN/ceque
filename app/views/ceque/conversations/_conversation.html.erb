@@ -1,3 +1,6 @@
 <li>
-  <%= link_to conversation.created_at, [:ceque, conversation]%>
+  <%= link_to [:ceque, conversation] do %>
+    <div class='participant-name'><%= conversation.created_by.name %></div>
+    <div class='conversation-date'><%= conversation.created_at.strftime('%A, %B %e') %></div>
+    <% end %>
 </li>
