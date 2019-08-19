@@ -1,0 +1,12 @@
+<div class='message'>
+  <div>
+    <%= image_tag 'ceque/user.png', class: 'avatar' %>
+  </div>
+  <div class='message-details'>
+    <div>
+      <span class='participant-name'><%= message.participant&.name %></span>
+      <span class='message-time'><%= message.created_at.strftime('%l:%M %p') %></span>
+    </div>
+    <div class='message-content'><%= message.content %></div>
+  </div>
+</div>

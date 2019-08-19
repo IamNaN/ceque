@@ -7,9 +7,9 @@ require 'factory_bot_rails'
 require 'byebug'
 require 'rspec/rails'
 require 'capybara/rspec'
-require 'capybara/apparition'
-Capybara.server = :webrick
-Capybara.javascript_driver = :apparition
+require 'webdrivers/chromedriver'
+
+Capybara.javascript_driver = :selenium_chrome_headless
 Capybara.asset_host = 'http://localhost:3000' 
 
 Dir[Rails.root.join('../support/**/*.rb')].each { |f| require f }

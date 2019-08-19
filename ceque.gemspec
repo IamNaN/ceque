@@ -1,17 +1,17 @@
 $:.push File.expand_path("lib", __dir__)
 
 # Maintain your gem's version:
-require "supportq/version"
+require "ceque/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "supportq"
-  spec.version     = Supportq::VERSION
+  spec.name        = "ceque"
+  spec.version     = CeQue::VERSION
   spec.authors     = ["IamNaN"]
   spec.email       = ["dgerton@gmail.com"]
-  spec.homepage    = 'https://github/IamNaN/supportq'
+  spec.homepage    = 'https://github/IamNaN/ceque'
   spec.summary     = 'Mountable Live Chat Support Sub-system for your Rails 5+ App'
-  spec.description = 'Supportq is a mountable chat engine focused on user support and customer engagement.'
+  spec.description = 'CeQue is a mountable chat engine focused on user support and customer engagement.'
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

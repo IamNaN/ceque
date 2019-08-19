@@ -1,15 +1,11 @@
-module Supportq
+module CeQue
   class MessagesController < ApplicationController
-    layout 'supportq'
-    def index
-      @messages = conversation.messages
-      @message = conversation.messages.build
-    end
+    layout 'ceque'
     
     def create
       conversation.messages.create(message_params)
       @messages = conversation.messages
-      render 'index'
+      redirect_to [:ceque, @conversation]
     end
 
     private
@@ -21,5 +17,10 @@ module Supportq
     def conversation
       @conversation ||= params[:conversation_id].present? ? Conversation.find(params[:conversation_id]) : Conversation.create
     end
+
+    def conversations
+      @conversations ||= Conversation.all.order(updated_at: :desc).limit(10)
+    end
+    
   end
 end

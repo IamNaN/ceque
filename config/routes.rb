@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :supportq do
+  namespace :ceque do
     namespace :admin do
       resources :conversations, only: :index
     end
@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :conversations do
       resources :messages
     end
+    resources :participants, only: [:create]
   end
-  get 'support', to: 'supportq/messages#index'
+  get 'support', to: 'ceque/conversations#new'
 end

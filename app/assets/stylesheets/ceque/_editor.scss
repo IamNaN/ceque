@@ -1,0 +1,12 @@
+.editor {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  .editor-content {
+    display: flex;
+    flex: 1;
+    input[type="text"] {
+      width: 100%;
+    }
+  }
+}

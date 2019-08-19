@@ -1,4 +1,4 @@
-# Supportq
+# CeQue
 Short description and motivation.
 
 # Requirements
@@ -11,7 +11,7 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'supportq'
+gem 'ceque'
 ```
 
 And then execute:
@@ -21,7 +21,7 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install supportq
+$ gem install ceque
 ```
 
 ## Contributing
