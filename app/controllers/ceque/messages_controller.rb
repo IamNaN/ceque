@@ -1,5 +1,5 @@
 module CeQue
-  class MessagesController < ApplicationController
+  class MessagesController < CeQue::CeQueController
     layout 'ceque'
     
     def create
@@ -11,7 +11,7 @@ module CeQue
     private
 
     def message_params
-      params.require(:message).permit(:content, :participant)
+      params.require(:message).permit(:content).merge(participant_id: current_participant.id)
     end
 
     def conversation

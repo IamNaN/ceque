@@ -1,7 +1,12 @@
 module CeQue
-  class ParticipantsController < ApplicationController
+  class ParticipantsController < CeQue::CeQueController
     def create
+      session[:participant_id] = participant.id
       redirect_to [:ceque, conversation]
+    end
+
+    def destroy
+      session[:participant_id] = nil
     end
 
     private

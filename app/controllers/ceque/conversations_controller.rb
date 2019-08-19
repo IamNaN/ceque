@@ -1,5 +1,5 @@
 module CeQue
-  class ConversationsController < ApplicationController
+  class ConversationsController < CeQue::CeQueController
     layout 'ceque'
     def index
       conversations
@@ -15,7 +15,7 @@ module CeQue
     end
 
     def create
-      @conversation = Conversation.create(created_by: participant)
+      @conversation = Conversation.create(created_by: current_participant)
       @messages = []
       render 'show'
     end

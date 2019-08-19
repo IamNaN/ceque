@@ -1,7 +1,8 @@
 .message-block {
   display: flex;
   flex: 1;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  place-content: flex-end;
   .message {
     display: flex;
     flex-direction: row;
