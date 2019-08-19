@@ -1,7 +1,7 @@
-module Supportq
+module CeQue
   class ParticipantsController < ApplicationController
     def create
-      redirect_to [:supportq, conversation]
+      redirect_to [:ceque, conversation]
     end
 
     private

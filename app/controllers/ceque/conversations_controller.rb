@@ -1,6 +1,6 @@
-module Supportq
+module CeQue
   class ConversationsController < ApplicationController
-    layout 'supportq'
+    layout 'ceque'
     def index
       conversations
     end
@@ -11,7 +11,7 @@ module Supportq
     end
 
     def new
-      render layout: 'supportq_clean'
+      render layout: 'ceque_clean'
     end
 
     def create

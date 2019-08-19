@@ -1,11 +1,11 @@
-module Supportq
+module CeQue
   class MessagesController < ApplicationController
-    layout 'supportq'
+    layout 'ceque'
     
     def create
       conversation.messages.create(message_params)
       @messages = conversation.messages
-      redirect_to [:supportq, @conversation]
+      redirect_to [:ceque, @conversation]
     end
 
     private

@@ -5,8 +5,8 @@ default: &default
 
 development:
   <<: *default
-  database: supportq_development
+  database: ceque_development
 
 test:
   <<: *default
-  database: supportq_test
+  database: ceque_test

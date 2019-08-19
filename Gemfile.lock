@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    supportq (0.1.0)
+    ceque (0.1.0)
       rails (~> 5.2.3)
 
 GEM
@@ -256,7 +256,7 @@ DEPENDENCIES
   rspec-rails
   selenium-webdriver
   simplecov
-  supportq!
+  ceque!
   webdrivers (~> 4.0)
 
 BUNDLED WITH

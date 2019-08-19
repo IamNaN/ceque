@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :supportq do
+# task :ceque do
 #   # Task goes here
 # end
