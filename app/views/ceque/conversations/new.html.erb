@@ -1,4 +1,8 @@
-<%= form_for([:ceque, Participant.new], remote: false, html: {class: 'px-4'} ) do |f| %>
-  <%= f.text_field :name, class: 'form-control', placeholder: 'What\'s your name', autofocus: :autofocus %>
-  <%= f.submit "Begin", disable_with: 'Sending...', class: 'btn btn-primary' %>
-<% end %>
+<div class='flex-center'>
+  <div class='panel'>
+    <%= form_for([:ceque, Participant.new], remote: false, html: {class: 'px-4'} ) do |f| %>
+      <%= f.text_field :name, class: 'form-control', placeholder: 'What\'s your name', autofocus: :autofocus %>
+      <%= f.submit "Let's talk!", disable_with: 'Sending...', class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>

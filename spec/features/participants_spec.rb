@@ -18,7 +18,7 @@ feature 'participants', js: true do
 
   def identify_myself
     fill_in :participant_name, with: 'Milla'
-    click_on 'Begin'
+    click_on "Let's talk!"
   end
 
   def enter_a_message

@@ -5,5 +5,5 @@ Feature: Starting a conversation
     Given my name is Dave
     When I visit the support link
     When I enter my name
-    When I click_on 'Begin'
+    When I click_on "Let's talk!"
     Then I should see the conversation page
