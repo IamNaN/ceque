@@ -5,6 +5,7 @@ feature 'participants', js: true do
   scenario 'starting a conversation' do
     Given I am a_participant
     When I visit the support_path
+    And I identify_myself
     And I enter_a_message
     And I click_on 'Send'
     Then I a_conversation_is_started
@@ -13,6 +14,11 @@ feature 'participants', js: true do
 
   def a_participant
     @participant = create :participant
+  end
+
+  def identify_myself
+    fill_in :participant_name, with: 'Milla'
+    click_on 'Begin'
   end
 
   def enter_a_message
